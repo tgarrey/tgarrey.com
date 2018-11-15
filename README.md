@@ -1,126 +1,44 @@
-# React Atomic Structure
-[![Build Status](https://travis-ci.org/Rulox/react-atomic-structure.svg?branch=master)](https://travis-ci.org/Rulox/react-atomic-structure)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Rulox_react-atomic-structure&metric=alert_status)](https://sonarcloud.io/dashboard?id=Rulox_react-atomic-structure)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-Basic Structure for React app following Atomic Design.
+In the project directory, you can run:
 
-This base project allows you to have a basic React App folder structure following the principles of [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/).
-It contains some basic components that you can use. All the components are not (or minimally) stylized. The main objective
-of this project is to have a basic structure, that is the reason we are not doing complex styles and/or adding many libs.
+### `npm start`
 
-Also, each component is a JSX file and a .scss file that is associated to the component. This means, all the 
-components for this project should be modular, to make it easy its usage between different apps.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Tools
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-Using these package, you will be able to start a new fresh React project with the basic folder and file structures.
+### `npm test`
 
-This project uses ES6 in the JS side, and Sass for styles. 
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Features
+### `npm run build`
 
-* Webpack 3
-* ES6
-* SASS
-* React Router
-* Auto watcher for JS and SCSS files
-* Atomic design project structure
-* Launch server with hot-reload using webpack
-* JS Lint ( extending airbnb eslint styles )
-* Styleint
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## TODO List
-* Tests
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-## Requirements
-* nodejs >= v8.*
-* npm >= v4.*
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-## Getting started
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-[Download the master branch](https://github.com/Rulox/react-atomic-structure/archive/master.zip)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-**or**
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Clone this repo (Be sure you delete the .git file, or move the files to your own project folder/repository)
-```bash
-git clone -b master --single-branch --depth 1 git@github.com:Rulox/react-atomic-structure.git
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-##### Install npm dependencies
-```bash
-npm install
-```
+## Learn More
 
-##### Run the server 
-```bash
-npm run start
-```
-A browser webpack server should be ready on  http://localhost:3200/ (or any other URL+PORT that your terminal says). You can start working right now in the code, and all the changes will be visible in the browser just opened.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Predefined components
-But first, [What is Atomic Design?](http://bradfrost.com/blog/post/atomic-web-design/)
-
-These components are just an idea on how to develop your application following the Atomic Design. Feel free to upgrade/delete them in order to do your own app!
-
-#### Atoms (stateless component)
-* Anchor
-* Label
-* Button
-* Input
-* Image
-* Title
-* Paragraph
-
-#### Molecules
-* Labeled input
-* Content
-
-#### Organisms
-* Article
-* Form
-* Nav
-
-#### Templates
-* Home
-* About
-
-## Creating your own component
-
-To create a new component, just create a new folder in the atoms/molecules/organisms/templates folder with the
-name of your component.
-
-Create now the React component in the jsx file. Also create your .scss file and remember to import it in the component jsx file using `require`.
-
-## NPM Scripts
-This project comes with the following scripts to help you.
-
-```bash
-npm run watch
-```
-This is the preferred method during development
-
-1. Create CSS and JS bundles from Sass and JS.
-2. Launch a web server.
-3. Launch watchers on JS/CSS files.
-
-```bash
-npm run start
-```
-1. Create CSS and JS bundles from Sass and JS.
-2. Launch a web server.
-
-```bash
-npm run build
-```
-1. Build CSS and JS files. With this command, the js will be minified, the bundle version will be used in the html.
-
-```bash
-npm run lint
-```
-1. Launch Lint checkers.
-
-## Contributions
-Feel free to create a pull request or create an issue to add features or fix bugs.
+To learn React, check out the [React documentation](https://reactjs.org/).
